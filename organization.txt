@@ -1,0 +1,69 @@
+organization: 
+
+window class: holds the game
+
+Game class: holds features that changes anything
+    .change.Act(actName) -> act      changes act
+    .change.Scene(sceneNumber) -> scene  changes scene
+
+    .change.gameBackground(newBackground) -> background    changes background
+    .change.gamestate(newGamestate) -> battle, roleplay, teach
+    .change.context() -> context so specific spells are casted the way the user probably wanted
+    .add.context() -> adds new pieces of context, writes them at the end of a the context list of the spells. 
+
+Background class: compiles elements of different backgrounds. 
+    Iternaty's Library
+    Training Classroom
+    Book scenes
+
+    includes GamePieces
+
+    .addToBackground(image,x,y): adds an unimportant image to the background
+    .addGamePiece(gamePiece)
+    .draw() -> draws the entire background
+
+
+
+GamePiece class: creates and draws stationary/notliving parts of the background that should be interacted with. 
+    .draw() -> draws gamePiece
+
+
+Button class: creates all buttons
+    anything that requires tapping to continue
+
+Spellcasting class: implements the spell-casting game mechanic
+    .readKeys(key, list) -> reads the last 5 - 7 keys that user inputs and returns them
+    .displayLettersInterface.store() -> display read letters (readKeys) for the user, also stores them in a list 
+    .displayLettersInterface.update() -> pushes the previously typed letters to the left, once list is 8 letters long, delete the first letter. 
+    .displayLettersInterface.kill() -> kills the interface
+    .displayLettersInterface.restrict() -> restrict the use of certain spells
+    .displayLettersInterface.isolate(spellName) -> finds the value and index number of the letters that match a spell. 
+
+    .findSpell ->  finds a spell that the user knows or find a spell when searched for
+    .implementSpell -> initiates spell consequences and animation
+    
+    .glow() -> lights up the displayLettersInterface
+
+Spells class: holds all the information about the spells
+    self = a database of the spells and possible interpretations of their use-cases
+    .learn(spell) -> appends new spell to learnedSpells list
+    .Permanentforget(spell) -> removes spells from learnedSpells list
+    .isUsuable -> returns true or false if a spell is isUsuable
+    .mark(spell, effect) -> marks the spells as hostile, friendly, healing, unusable, usable, temp_forgotten, etc
+    .findPossibleUseCase -> if a spell could have multiple uses, based on context, return favored outcome 
+    .
+
+Spellbook class: the spellbook game-mechanic    
+    .open -> opens spellbook on click
+    .close -> closes spellbook from a button
+    .flipPage -> change the page and initiate flipPage animation
+    .searchSpell -> use find spell and go to the page number where the spell is kept. 
+  
+UpdateSave Class: updates the player's save file. 
+    .updateLearnedSpells(newSpell)
+    .updateGameState(newGamestate)
+    .updateAct(newAct)
+    .updateScene(newScene)
+    
+
+

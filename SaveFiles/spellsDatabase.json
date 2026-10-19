@@ -1,0 +1,503 @@
+{
+    "spells":{
+        "fire":{
+            "description" : "Conjures fire or manipulates fire",
+            "marks" : {
+                "hostility" : "neutral",
+                "category" : "elemental-fire",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "gamble"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "fire"
+        }, 
+
+
+        "water":{
+            "description" : "conjures or manipulates water.",
+            "marks" : {
+                "hostility" : "friendly",
+                "category" : "elemental-water",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "gamble"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "water"
+
+        },
+
+        "ice":{
+            "desciption": "Conjures or manipulates ice.",
+            "marks" : {
+                "hostility" : "neutral",
+                "category" : "elemental-ice",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "gamble"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "ice"
+            
+        },
+
+        "grass":{
+            "description" : "Conjures grasslands or manipulates the stability of grassyland",
+            "marks" : {
+                "hostility" : "neutral",
+                "category" : "elemental-land",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "friendly"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "grass"
+        },
+
+        "flower":{
+            "description": "Creates flowers to bloom or controlls some plants",
+            "marks" : {
+                "hostility" : "friendly",
+                "category" : "elemental-land",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "friendly"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "flower"
+        },
+
+        "vines":{
+            "description" : "conjures and manipulates vines",
+            "marks" : {
+                "hostility" : "neutral",
+                "category" : "elemental-land",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "gamble"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "vine"
+        },
+
+        "rock":{
+            "description" : "conjures and manipulates rocks",
+            "marks" : {
+                "hostility" : "neutral",
+                "category" : "elemental-land",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "gamble"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "rock"
+        },
+
+        "sand":{
+            "description" : "conjures and manipulates sand",
+            "marks" : {
+                "hostility" : "friendly",
+                "category" : "elemental-land",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "gamble"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "sand"
+        },
+
+        "wind":{
+            "description" : "manipulates the wind",
+            "marks" : {
+                "hostility" : "friendly",
+                "category" : "elemental-air",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "gamble"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "wind"
+        },
+
+        "earthquake":{
+            "description" : "Causes an earthquake",
+            "marks" : {
+                "hostility" : "hostile",
+                "category" : "elemental-land",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "attack",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "attack",
+                        "hostile" : "attack",
+                        "neutral" : "attack"
+                    },
+                    "self" : "attack"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "equake"
+        },
+
+        "tsunami":{
+            "description" : "Starts a magical tsunami",
+            "marks" : {
+                "hostility" : "hostile",
+                "category" : "elemental-water",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "attack",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "attack",
+                        "hostile" : "attack",
+                        "neutral" : "attack"
+                    },
+                    "self" : "attack"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "wave"
+        }, 
+
+        "hurricane":{
+            "description" : "starts a mini-hurricane",
+            "marks" : {
+                "hostility" : "friendly",
+                "category" : "elemental-water",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "gamble"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "size - big - rain"
+        },
+
+        "metalWork":{
+            "description" : "forges metallic tools",
+            "marks" : {
+                "hostility" : "neutral",
+                "category" : "handy-work",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "neutral",
+                    "GamePiece" : {
+                        "friendly" : "neutral",
+                        "hostile" : "neutal",
+                        "neutral" : "neutal"
+                    },
+                    "self" : "friendly"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : ["make", "metal"]
+        },
+
+        "metalWall":{
+            "description" : "creates a metal wall",
+            "marks" : {
+                "hostility" : "hostile",
+                "category" : "metal",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "friendly",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "neutral",
+                        "neutral" : "neutral"
+                    },
+                    "self" : "friendly"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : ["wall", "metal"]
+        },
+
+        "friends":{
+            "description" : "makes the target like you more",
+            "marks" : {
+                "hostility" : "friendly",
+                "category" : "psychology",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "attack",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "attack",
+                        "neutral" : "gamble"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : "friends"
+            
+        },
+
+        "woodwork":{
+            "description" : "crafts wood-based tools",
+            "marks" : {
+                "hostility" : "friendly",
+                "category" : "handy-work",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "neutral",
+                    "person" : "nothing",
+                    "GamePiece" : {
+                        "friendly" : "friendly",
+                        "hostile" : "friendly",
+                        "neutral" : "friendly"
+                    },
+                    "self" : "friendly"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : ["make", "wood"]
+        },
+
+        "weaponry":{
+            "description" : "forges weapons"
+        },
+
+        "invisibility":{
+            "description" : "makes the target invisible"
+        },
+
+        "speed":{
+            "_note":"self, others, objects, fast, slow"
+
+        },
+
+        "transformation":{
+            "_note": "#self, others, objects, etc"
+
+        },
+
+        "strength":{
+            "description" : "superStrength"
+        },
+
+        "hack":{
+            "description" : "hacks into a computer or an encoded object"
+        },
+
+        "encode":{
+            "description" : "Blocks access to applicable objects behind a barrier that needs to be hacked/decoded"
+        },
+
+        "quickLearn":{
+            "description" : "Allows the target to learn spells quickly for the next set amount of time"
+        },
+
+        "stamina":{
+            "description" : "Increases or decreases target's stamina"
+        },
+
+        "enterBook":{
+            "description" : "Enters a targeted book",
+            "marks" : {
+                "hostility" : "neutral",
+                "category" : "archival",
+                "learned" : false,
+                "usuable" : false,
+                "temp_forgotten":false,
+                "targets" : {
+                    "nothing" : "None",
+                    "person" : "None",
+                    "GamePiece" : {
+                        "book" : "friendly"
+                    },
+                    "self" : "gamble"
+                }
+            },
+                "numtargets" : 1, 
+                "spellSequence" : ["book", "in"]
+
+        },
+
+        "exitBook":{
+            "description" : "Exits the book you are in if exit conditions are met"
+        },
+
+        "light":{
+            "description" : "Creates and manipulates light"
+        },
+
+        "dark":{
+            "description" : "creates and manipulates shadows"
+        }, 
+
+        "necromany":{
+            "description" : "revives and manipulates fallen enemies and friends around you"
+        },
+
+        "bookmarkPage":{
+            "description" : "adds a bookmarked page in your spellbook"
+        },
+
+        "size": {
+            "description" : "manipulates the sizes of target or proceeding spell"
+        },
+
+        "food":{
+            "description" : "turns applicable targets into food"
+        },
+
+        "cook":{
+            "description" : "cooks food"
+        }, 
+
+        "erase":{
+            "description" : "erases the existence of spells, memories and in some cases objects around you"
+        },
+
+        "sound":{
+            "description" : "manipulates or creates sounds around you"
+        }, 
+
+        "summonDancingMan":{
+            "description" : "a man comes and dances..."
+        },
+
+        "prank":{
+            "description" : "shuffles the spells for your opponents. Any spell casted will result in a random spell. Target is still controllable"
+        },
+
+        "flexibility":{
+            "description" : "Increases flexibility",
+            "-note": "like elastigirl"
+        },
+
+        "attract":{
+            "description" : "Makes the target's surroundings fall in love with them."
+        },
+
+        "flight":{
+            "description" : "causes target to flyyyy"
+        },
+
+        "magentize":{
+            "description" : "Select two targets, magnetizes them to attract or repel each other"
+        },
+
+        "mindControl":{
+            "description" : "controls what spell or dialogue the target would say next"
+        }
+}}
